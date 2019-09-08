@@ -1,0 +1,20 @@
+{
+  "name": "nodeJSWebServer",
+  "version": "1.0.0",
+  "description": "study web server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:tcp": "npm run transpile && node build/tcpServer.js",
+    "server:http": "npm run transpile && node build/httpServer.js",
+    "client:tcp": "npm run transpile && node build/tcpClient.js",
+    "transpile": "tsc -b ./"
+  },
+  "keywords": ["tcp", "http", "study"],
+  "author": "feel5ny",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.7.4",
+    "typescript": "^3.6.2"
+  }
+}
